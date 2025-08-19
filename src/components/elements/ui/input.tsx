@@ -5,6 +5,7 @@ export const InputField = ({
   placeholder,
   handleChange,
   value,
+  scale,
 }: IInput) => {
   return (
     <input
@@ -12,7 +13,7 @@ export const InputField = ({
       placeholder={placeholder}
       onChange={handleChange}
       value={value}
-      className="w-full max-w-xl px-4 py-3 rounded-2xl border border-grayCustom shadow-sm focus:outline-none focus:ring-2 focus:ring-foreBackground focus:border-foreBackground transition duration-200 bg-whiteCustom text-black placeholder-grayCustom"
+      className={`hover:${scale} w-full max-w-xl px-4 py-3 rounded-2xl border border-grayCustom shadow-sm focus:outline-none focus:ring-2 focus:ring-foreBackground focus:border-foreBackground transition duration-200 bg-whiteCustom text-black placeholder-grayCustom`}
     />
   );
 };

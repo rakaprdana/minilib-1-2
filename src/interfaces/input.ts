@@ -1,6 +1,9 @@
 export interface IInput {
   placeholder: string;
-  handleChange: () => void;
+  handleChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   type: string;
   value?: string;
+  scale?: string;
 }

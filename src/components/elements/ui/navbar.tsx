@@ -4,7 +4,7 @@ export const Navbar = () => {
   const nav = useNavigate();
   return (
     <>
-      <nav className="bg-primary fixed flex justify-between items-center w-full max-w-[83rem] text-foreBackground px-12 m-4 rounded-full shadow drop-shadow-grayCustom">
+      <nav className="bg-primary fixed flex justify-between items-center w-full max-w-[78rem] text-foreBackground px-12 m-4 rounded-full shadow drop-shadow-grayCustom">
         <button className="w-40" onClick={() => nav("/")}>
           <img src={NavIcon} alt="home" />
         </button>
